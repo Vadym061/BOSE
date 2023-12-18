@@ -1,0 +1,96 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 64px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+.wrapper{
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 64px 10px;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./image/Headphones-image-1.png');
+    position: relative;
+}
+.header__title{
+    color: #292929;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    padding-top: 40px;
+}
+.header__top{
+    display: flex;
+    justify-content: space-between;
+}
+.burger{
+    background-color: inherit;
+    border:none;
+    cursor: pointer;
+}
+.burger__close{
+    background-color: inherit;
+    border:none;
+    cursor: pointer;
+}
+.menu{
+    background: #E8EFF9;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    transition: all 0.5s ease-in;
+}
+.menu__link{
+    color: #292929;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+.menu__link:hover{
+    border-bottom: 1px solid #292929;
+}
+.menu__list{
+    list-style: none;
+    padding-top: 64px;
+}
+.menu__list--item:not(:last-child){
+    margin-bottom: 32px;
+}
+.menu.active{
+    background: #E8EFF9;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    transition: all 0.5s ease-in;
+}
